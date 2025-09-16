@@ -52,8 +52,11 @@ if ingredients_list:
 cnx = st.connection("snowflake")
 session = cnx.session()
 
+#import requests
+#smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+#st.text(smoothiefroot_response)
+# New section to display smoothiefroot nutrition information
 import requests
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
-
+st.text(smoothief root_response.json())
     
